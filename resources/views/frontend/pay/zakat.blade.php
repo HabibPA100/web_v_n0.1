@@ -124,12 +124,12 @@
                                            </div>
                                            <div class="col-6 col-md-4 mb-2">
                                                <label class="btn btn-outline-primary w-100 h-100 d-flex align-items-center justify-content-center text-decoration-none">
-                                                   <input type="radio" name="amount" value="1000" hidden > 500 ৳
+                                                   <input type="radio" name="amount" value="500" hidden > 500 ৳
                                                </label>
                                            </div>
                                            <div class="col-6 col-md-4 mb-2">
                                                <label class="btn btn-outline-primary w-100 h-100 d-flex align-items-center justify-content-center text-decoration-none">
-                                                   <input type="radio" name="amount" value="5000" hidden > 1000 ৳
+                                                   <input type="radio" name="amount" value="1000" hidden > 1000 ৳
                                                </label>
                                            </div>
                                            <div class="col-6 col-md-4 mb-2">

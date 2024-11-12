@@ -72,13 +72,10 @@
                     </div>
                 </div>
                 <a href="{{ url('contact') }}" class="nav-item nav-link fs-5">যোগাযোগ</a>
-                <a href="{{ route('login') }}" class="nav-item nav-link fs-5">লগ ইন</a>
-
+                <a href="{{ route('register') }}" class="nav-item nav-link fs-5">রেজিস্টার</a>
             </div>
-            <a href="{{ url('pay') }}" class="btn btn-primary py-4 px-lg-5 d-none d-lg-block fs-5">Pay Now<i class="fa fa-arrow-right ms-3"></i></a>
+            <a href="{{ url('pay') }}" class="btn btn-primary py-4 d-none d-lg-block fs-5">Pay Now<i class="fa fa-arrow-right ms-3"></i></a>
         </div>
     </nav>
     <!-- Navbar End -->
-
-
     
