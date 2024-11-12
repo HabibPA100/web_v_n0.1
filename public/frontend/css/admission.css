@@ -1,0 +1,51 @@
+input{
+    width: 100%;
+    margin-bottom: 1rem;
+    outline: none;
+    border: none;
+    color:black;
+    border-bottom: 1px dotted;
+    font-family: Kalpurush;
+}
+input:focus{
+    outline: none;
+}
+.headingDiv{
+    background-image:linear-gradient( 45deg,
+    #b4ff5f,      /* Start with a coral shade */
+    #ca6c6c 20px,
+    #feb47b 20px, /* Transition to a peach */
+    #feb47b 40px,
+    #86a8e7 40px, /* Add a cool blue for contrast */
+    #86a8e7 60px,
+    #8f5fff 60px);
+}
+.banglaFont{
+    font-family: Kalpurush;
+}
+label{
+    color: #111111;
+
+    font-family: Kalpurush;
+    text-decoration: underline;
+}
+select,h5,h6,h4,p,textarea{
+    font-family: Kalpurush;
+}
+.marginBottom{
+    margin-top: 1rem;
+    margin-bottom: 2.5rem;
+}
+.paddingTop{
+    padding-top: 2rem;
+}
+.linearCard {
+    background: linear-gradient(135deg, #3a7bd5, #3a6073);
+    color: #ffffff; /* Ensures good contrast with text */
+    border: none;   /* Optional: remove card border */
+    border-radius: 8px; /* Optional: softens corners */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15); /* Adds a subtle shadow */
+  }
+td{
+     color: black;
+  }
