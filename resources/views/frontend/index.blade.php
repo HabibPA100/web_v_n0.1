@@ -38,7 +38,7 @@
         <div class="row">
             <div class="col">
               <div class="card shadow-lg p-3 mb-5 bg-success banglaFont" style="border-radius: 10px;">
-                <div class="card-header text-center bg-info text-light fs-5 textAnimation">
+                <div class="card-header text-center bg-info text-light fs-5 admissionMassageAnimation">
                     আমাদের প্রতিষ্ঠানের ভর্তির নিয়মাবলী
                 </div>
                 <div class="card-body table-responsive">

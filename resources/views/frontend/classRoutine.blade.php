@@ -2,8 +2,12 @@
 @section('main-container')
 <div class="container">
     <div class="container">
-        <div class="card">
-            <img src="{{ asset('frontend/img/nuraniBord.jpg') }}" alt="Nurani Bord">
+        <div class="card text-center">
+            <figure>
+                <img src="{{ asset('frontend/img/nuraniBord.jpg') }}" alt="Nurani Bord"
+                style="max-width: 100%; height:auto">
+                <figcaption style="font-family: kalpurush">Madrasah Board Bangladesh</figcaption>     
+            </figure>
         </div>
     </div>
     <section class="headerSection">

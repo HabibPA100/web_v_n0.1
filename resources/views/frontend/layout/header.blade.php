@@ -37,23 +37,35 @@
         <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
             <span class="sr-only">Loading...</span>
         </div>
-    </div>     <!-- Spinner End -->
-
-
+    </div>
+ <!-- Spinner End -->
    <nav class="navbar navbar-expand-lg bg-white navbar-light shadow sticky-top p-0">
         <a href="{{ url('/') }}" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
-            <h2 class="m-0 text-danger"><i class="fa fa-book me-3 text-success"></i>M H U D</h2>
+            <h2 class="m-0 text-danger"><i class="fa fa-building-columns me-3 text-success"></i>M H U D</h2>
         </a>
         <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav ms-auto p-4 p-lg-0">
-                <a href="{{ url('/') }}" class="nav-item nav-link active fs-5">হোম</a>
-                <a href="{{ url('/about') }}" class="nav-item nav-link fs-5">আমাদের সম্পর্কে</a>
-                <a href="{{ url('routine') }}" class="nav-item nav-link fs-5">ক্লাস রুটিন</a>
-                <a href="{{ url('admission') }}" class="nav-item nav-link fs-5">ভর্তি ফরম</a>
-                <div class="nav-item dropdown">
+                <div class="btn nav-link navbar-nav ms-auto p-4 p-lg-0" style="border-radius:3rem">
+                    <select onchange="location = this.value;" 
+                            style="font-size: 1.2rem; border:none; margin-right: 15px; max-height: 100px; overflow-y: auto;">
+                        <option value="" disabled selected>রিজাল্ট সিট দেখুন</option>
+                        <optgroup label="নুরানী রিজাল্ট">
+                            <option value="{{ url('/error') }}">প্লে জামাত</option>
+                            <option value="{{ url('/error') }}">নার্সারি জামাত</option>
+                            <option value="{{ url('/error') }}">প্রথম শ্রেণী</option>
+                            <option value="{{ url('/error') }}">দ্বিতীয় শ্রেণী</option>
+                            <option value="{{ url('/error') }}">তৃতীয় শ্রেণী</option>
+                        </optgroup>
+                        <optgroup label="হিফয বিভাগ রিজাল্ট">
+                            <option value="{{ url('/error') }}">নাজেরা বিভাগ</option>
+                            <option value="{{ url('/error') }}">হিফয</option>
+                        </optgroup>
+                    </select>                       
+                </div>
+                {{-- <div class="nav-item dropdown">
                     <a href="{{ url('/nuraniResult') }}" class="nav-link dropdown-toggle fs-5" data-bs-toggle="dropdown">নুরানী রিজাল্ট</a>
                     <div class="dropdown-menu fade-down m-0">
                         <a href="{{ url('/error') }}" class="dropdown-item fs-5">প্লে জামাত</a>
@@ -70,9 +82,13 @@
                         <a href="{{ url('/error') }}" class="dropdown-item fs-5">নাজেরা বিভাগ</a>
                         <a href="{{ url('/error') }}" class="dropdown-item fs-5"> হিফয</a>
                     </div>
-                </div>
+                </div> --}}
+                <a href="{{ url('/about') }}" class="nav-item nav-link fs-5">আমাদের সম্পর্কে</a>
+                <a href="{{ url('routine') }}" class="nav-item nav-link fs-5">ক্লাস রুটিন</a>
+                <a href="{{ url('admission') }}" class="nav-item nav-link fs-5">ভর্তি ফরম</a>
                 <a href="{{ url('contact') }}" class="nav-item nav-link fs-5">যোগাযোগ</a>
                 <a href="{{ route('register') }}" class="nav-item nav-link fs-5">রেজিস্টার</a>
+                <a href="{{ url('/') }}" class="nav-item nav-link active fs-5">হোম</a>
             </div>
             <a href="{{ url('pay') }}" class="btn btn-primary py-4 d-none d-lg-block fs-5">Pay Now<i class="fa fa-arrow-right ms-3"></i></a>
         </div>
