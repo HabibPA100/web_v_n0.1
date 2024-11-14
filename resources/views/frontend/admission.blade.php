@@ -18,56 +18,67 @@
 </div>
 <!-- Header is started here  -->
 <section id="headerSection">
-    <div class="container-fluid text-center headingDiv" >
-        <div class="container-fluid">
-            <h1 class="text-light pt-3" style="font-family: KFGQPC Uthmanic Script HAFS Regular;">المدرسة هداية الأمة دكا بنغلاديش</h1>
-            <div class="container">
-                <div class="row justify-content-center align-items-center">
-                  <!-- First Card (Bangla content) -->
-                  <div class="col-md-4 text-light">
-                    <div class="card border-0 headingDiv ">
-                      <div class="card-body banglaFont text-center linearCard">
-                        <h3 class="text-light">মাদ্‌রাসা হেদায়াতুল উম্মাহ্‌ ঢাকা</h3>
-                        <h5 class="card-title text-center text-light">হাজীনগর, সারুলিয়া, ডেমরা, ঢাকা-১৩৬১</h5>
-                        <h6 class="text-white"> <a href="{{ url('https://wa.me/01921179455') }}"><img src="{{ asset('frontend/img/whatsapp.png') }}" alt="WhatsApp"class="rounded-circle" alt="Rounded Image" style="width: 30px; height: 30px;"> </a>
-                          <a href="{{ url('https://imo.im/01921179455') }}">
-                            <img src="{{ asset('frontend/img/imo.png') }}" alt="WhatsApp"class="rounded-circle" alt="Rounded Image" style="width: 25px; height: 25px;"> </a>
-                            মোবাইল: 01921-179455,<br> <i class="fa-solid fa-phone"></i>  0187590-5552</h6>
-                      </div>
-                    </div>
+  <div class="container-fluid text-center headingDiv">
+    <div class="container-fluid">
+      <p class="p-3 fs-1 text-center" style="font-family: 'KFGQPC Uthmanic Script HAFS Regular', sans-serif;">المدرسة هداية الأمة دكا بنغلاديش</p>
+      <div class="container">
+        <div class="row justify-content-center align-items-center">
+          
+          <!-- First Card (Bangla content) -->
+          <div class="col-md-4  d-none d-md-block">
+            <div class="card border-0 headingDiv">
+              <div class="card-body banglaFont linearCard">
+                <h4 class="text-center text-dark">Madrasa Hedayatul Ummah Dhaka</h4>
+                <h5 class="card-title text-center">Hajinagar, Sarulia, Demra, Dhaka-1361</h5>
+                <h6 class="text-center">
+                  <div class="d-flex justify-content-center mb-2">
+                    <a href="{{ url('https://wa.me/01921179455') }}">
+                      <img src="{{ asset('frontend/img/whatsapp.png') }}" alt="WhatsApp" class="rounded-circle" style="width: 30px; height: 30px;">
+                    </a>
+                    <a href="{{ url('https://imo.im/01921179455') }}" class="ms-2">
+                      <img src="{{ asset('frontend/img/imo.png') }}" alt="Imo" class="rounded-circle" style="width: 25px; height: 25px;">
+                    </a>
                   </div>
-                  
-                  <!-- Centered Image -->
-                  <div class="col-md-2 text-center">
-                    <img src="{{ url('frontend/img/madrasah.png') }}" class="rounded-circle" alt="Rounded Image" style="width: 150px; height: 150px;">
+                  Phone: 01921-179455,<br> <i class="fa-solid fa-phone"></i> 0187590-5552
+                </h6>                
+              </div>
+            </div>
+          </div>
+          <!-- Centered Image -->
+          <div class="col-md-2 d-flex justify-content-center align-items-center">
+            <img src="{{ url('frontend/img/madrasah.png') }}" class="rounded-circle" alt="Madrasah Image" style="width: 150px; height: 150px;">
+          </div>
+          <!-- Second Card (English content) -->
+          <div class="col-md-4 text-light">
+            <div class="card border-0 headingDiv">
+              <div class="card-body banglaFont text-center linearCard">
+                <h2 class=" text-center text-dark">মাদ্‌রাসা হেদায়াতুল উম্মাহ্‌ ঢাকা</h2>
+                <h5 class="card-title text-center">হাজীনগর, সারুলিয়া, ডেমরা, ঢাকা-১৩৬১</h5>
+                <h6 class="text-center">
+                  <div class="d-flex justify-content-center mb-2">
+                    <a href="{{ url('https://wa.me/01921179455') }}">
+                      <img src="{{ asset('frontend/img/whatsapp.png') }}" alt="WhatsApp" class="rounded-circle" style="width: 30px; height: 30px;">
+                    </a>
+                    <a href="{{ url('https://imo.im/01921179455') }}" class="ms-2">
+                      <img src="{{ asset('frontend/img/imo.png') }}" alt="Imo" class="rounded-circle" style="width: 25px; height: 25px;">
+                    </a>
                   </div>
-                  
-                  <!-- Second Card (English content) -->
-                  <div class="col-md-4">
-                    <div class="card border-0 headingDiv">
-                      <div class="card-body banglaFont linearCard">
-                        <h3 class="text-center text-light">Madrasa Hedayatul Ummah Dhaka</h3>
-                        <h5 class="card-title text-center text-light">Hajinagar, Sarulia, Demra, Dhaka-1361</h5>
-                        <h6 class="text-center text-light"><span>
-                          <a href="{{ url('https://wa.me/01921179455') }}"><img src="{{ asset('frontend/img/whatsapp.png') }}" alt="WhatsApp"class="rounded-circle" alt="Rounded Image" style="width: 30px; height: 30px;"> </a>
-                          <a href="{{ url('https://imo.im/01921179455') }}">
-                            <img src="{{ asset('frontend/img/imo.png') }}" alt="WhatsApp"class="rounded-circle" alt="Rounded Image" style="width: 25px; height: 25px;"> </a>
-                            Mob: 01921-179455,<br> <i class="fa-solid fa-phone"></i>  0187590-5552    
-                        </span></h6>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>              
-        </div>     
+                  মোবাইল: 01921-179455,<br> <i class="fa-solid fa-phone"></i> 0187590-5552
+                </h6>                
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-    <hr class="w-100" style="height: 5px; background-color: #030303; border-radius: 4px; border:none;">    
+  </div>
+  <hr class="w-100" style="height: 5px; background-color: #030303; border-radius: 4px; border: none;">
 </section>
 <!-- Header has been ended  -->
 <!-- Card is started here  -->
 <section class="sectionN02">
     <div class="container mt-3">
-       <div class="card text-dark">
+       <div class="card text-dark formBgColor">
         <div class="card-body">
           <p>
             বরাবর <br>পরিচালক <br> মাদ্‌রাসা হেদায়াতুল উম্মাহ্‌ ঢাকা <br> <strong>বিষয় : ভর্তির আবেদন প্রসঙ্গে</strong> <br> জনাব,<br> বিনীত নিবেদন এই যে আমি অত্র মাদ্‌রাসার বর্তমান ও ভবিষ্যতের সকল নিয়ম-কানুন মেনে চলার অঙ্গীকার করে ভর্তি হওয়ার আবেদন করছি। সে মতে আমি আমার জীবন বৃত্তান্ত নিম্নে পেশ করলাম।
@@ -272,9 +283,9 @@
           
               <label class="float-start">যে বিভাগে/শ্রেণীতে পড়তে ইচ্ছুক</label><br>
                 <div class="form-check">
-                    <label class="text-info">নুরানী বিভাগ</label><br>
+                    <label class="text-danger fs-5 text-white">নুরানী বিভাগ</label><br>
                     <input class="form-check-input" type="radio" name="class_name" value="প্লে জামাত" required />
-                    <label class="form-check-label text-decoration-none">প্লে জামাত</label>
+                    <label class="form-check-label text-decoration-none text-left">প্লে জামাত</label>
                 </div>
                 <div class="form-check">
                     <input class="form-check-input" type="radio" name="class_name" value="নার্সারি জামাত" required />
@@ -293,7 +304,7 @@
                   <label class="form-check-label text-decoration-none"> তৃতীয় জামাত</label>
                 </div>
                 <div class="form-check">
-                  <label class="text-info">হিফয বিভাগ</label> <br>
+                  <label class="text-danger fs-5 text-white">হিফয বিভাগ</label> <br>
                   <input class="form-check-input" type="radio" name="class_name" value="নাজেরা বিভাগ" required/>
                   <label class="form-check-label text-decoration-none">নাজেরা বিভাগ</label>
                 </div>
@@ -371,18 +382,18 @@
     </p>
   </div>
  </div>
- <div class="card mt-3 linearCard">
+ <div class="card mt-3 formBgColor">
   <div class="card-header my-3">
-    <h4 class="text-center">অভিভাবকের জ্ঞাতব্য</h4>
+    <p class="text-center fs-4 text-dark">অভিভাবকের জ্ঞাতব্য</p>
   </div>
   <div class="card-body paddingTop">
-    <p>
+    <p class="text-dark">
      ১. অভিভাবককে প্রতি মাসে কমপক্ষে একবার পরিচালকের সাথে যোগাযোগ রক্ষা করা একান্ত জরুরী। <br>২. ছাত্রের ছুটি কিংবা ছাত্রকে নেওয়ার জন্য পরিচিত অভিভাবক ব্যতীত অন্য কেহ আসলে ছাত্রের অভিভাবক কর্তৃক স্বাক্ষরিত সন্তোষজনক প্রমাণপত্র না পেলে তা গ্রহণ করা হবে না। <br>  ৩. মাদ্‌রাসা কর্তৃপক্ষের অনুমোদিত সকল প্রকার বিধি-বিধান সর্বাবস্থায় মেনে চলব। <br> ৪. সংশ্লিষ্ট ছাত্র কোন অবস্থাতেই যেন কর্তৃপক্ষের বিনা অনুমতিতে অনুপস্থিত না থাকে সেদিকে সতর্ক দৃষ্টি রাখব। <br> ৫. প্রতি ইংরেজি চলতি মাসের ৫ তারিখের মধ্যে খোরাকি ও বেতনের টাকা পরিশোধ করব অন্যথায় সংশ্লিষ্ট ছাত্রের প্রাতিষ্ঠানিক সুবিধা স্থগিত হলে এর জন্য সংশ্লিষ্ট অভিভাবকই দায়ী হবেন। <br>
       ৬. যদি কোন ছাত্র ভাংতি মাসে চলে যায় তাহলে বেতনের পূর্ণ টাকা এবং যতদিন খানা খাবে ততদিনের টাকা পরিশোধ করব। এতে সংশ্লিষ্ট অভিভাবকের কোনরূপ আপত্তি থাকবে না। <br> ৭. কোন রূপ বাহানা দেখাইয়া মাদ্‌রাসার বেতনের টাকা না দিলে, জবাব দিতে হবে পরকালে। <br> 
       ৮. কেহ যদি মাদ্‌রাসার নির্ধারিত বেতন থেকে কম সাব্যস্ত হয় তাহলে বন্ধ- ছুটি কাটা, অনুপস্থিত থাকলে তার জন্য কম দেওয়ার সুযোগ নেই। কোন আপত্তি ও চলবেনা। <br>
     </p>
-    <div class="card-footer">
-        <h5 class="text-dark">বিশেষ দ্রষ্টব্য:- সাক্ষাতের সময় সকাল ৭টা হতে ৮টা পর্যন্ত এবং বিকেলে আসরের পর হতে মাগরিব পর্যন্ত। </h5>
+    <div class="card-footer bg-dark">
+        <p class="text-white fs-4">বিশেষ দ্রষ্টব্য:- সাক্ষাতের সময় সকাল ৭টা হতে ৮টা পর্যন্ত এবং বিকেলে আসরের পর হতে মাগরিব পর্যন্ত। </p>
     </div>
   </div>
  </div>

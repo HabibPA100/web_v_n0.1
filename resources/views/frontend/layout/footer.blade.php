@@ -72,7 +72,7 @@
 <section>
 {{-- smale device footer nav bar start here --}}
 <div class="container d-flex d-lg-none w-100%">
-    <div style="background-color: #00A44B;    margin-bottom: -10px;" class="d-flex justify-content-around small footer-section fixed-bottom ">
+    <div style="background-color: #047939;    margin-bottom: -10px;" class="d-flex justify-content-around small footer-section fixed-bottom ">
         <div class="col-2 mt-1">
           <a href="{{ url('/') }}" class="text-decoration-none">
             <div class="home-box text-center">

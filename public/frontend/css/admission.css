@@ -5,20 +5,15 @@ input{
     border: none;
     color:black;
     border-bottom: 1px dotted;
-    font-family: Kalpurush;
+    font-family: 'Kalpurush';
 }
 input:focus{
     outline: none;
 }
 .headingDiv{
-    background-image:linear-gradient( 45deg,
-    #b4ff5f,      /* Start with a coral shade */
-    #ca6c6c 20px,
-    #feb47b 20px, /* Transition to a peach */
-    #feb47b 40px,
-    #86a8e7 40px, /* Add a cool blue for contrast */
-    #86a8e7 60px,
-    #8f5fff 60px);
+    background-color: #4158D0;
+background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 22%, #FFCC70 45%, #37c046 75%, #cf5435 100%);
+
 }
 .banglaFont{
     font-family: Kalpurush;
@@ -40,7 +35,7 @@ select,h5,h6,h4,p,textarea{
     padding-top: 2rem;
 }
 .linearCard {
-    background: linear-gradient(135deg, #3a7bd5, #3a6073);
+    background-image: linear-gradient( 68.1deg,  rgba(196,69,69,1) 9.2%, rgba(236, 204, 170, 0.82) 25%, rgba(247, 224, 149, 0.82) 43.4%, rgba(107,225,108,0.82) 58.2%, rgba(107,169,225,0.82) 75.1%, rgba(153,41,243,0.82) 87.3% );
     color: #ffffff; /* Ensures good contrast with text */
     border: none;   /* Optional: remove card border */
     border-radius: 8px; /* Optional: softens corners */
@@ -49,3 +44,21 @@ select,h5,h6,h4,p,textarea{
 td{
      color: black;
   }
+         .formBgColor {background-image: linear-gradient(to right, #30E8BF 0%, #FF8235  51%, #30E8BF  100%)}
+         .formBgColor {
+            transition: 1.5s;
+            background-size: 200% auto;
+            box-shadow: 0 0 20px #635858;
+            border-radius: 10px;
+            -webkit-transition: 1.5s;
+            -moz-transition: 1.5s;
+            -ms-transition: 1.5s;
+            -o-transition: 1.5s;
+}
+
+          .formBgColor:hover {
+            background-position: right center; 
+            color: #fff;
+            text-decoration: none;
+          }
+         

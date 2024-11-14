@@ -1,21 +1,29 @@
 <?php
 
-use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\frontend\aboutController;
-use App\Http\Controllers\frontend\admissionController;
-use App\Http\Controllers\frontend\pay\admissionFeesPayment;
-use App\Http\Controllers\frontend\contactController;
-use App\Http\Controllers\frontend\error404Controller;
-use App\Http\Controllers\frontend\homeController;
-use App\Http\Controllers\frontend\pay\DonationController;
-use App\Http\Controllers\frontend\pay\ExamFeeController;
-use App\Http\Controllers\frontend\pay\StudentSalaryOfMonthController;
-use App\Http\Controllers\frontend\pay\ZakatController;
+use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\frontend\payController;
+use App\Http\Controllers\frontend\homeController;
+use App\Http\Controllers\frontend\aboutController;
+use App\Http\Controllers\frontend\termsController;
+use App\Http\Controllers\frontend\contactController;
 use App\Http\Controllers\frontend\privacyController;
 use App\Http\Controllers\frontend\RoutineController;
-use App\Http\Controllers\frontend\termsController;
+use App\Http\Controllers\frontend\error404Controller;
+use App\Http\Controllers\frontend\admissionController;
+use App\Http\Controllers\frontend\pay\ZakatController;
+use App\Http\Controllers\frontend\pay\ExamFeeController;
+use App\Http\Controllers\frontend\pay\DonationController;
+use App\Http\Controllers\frontend\pay\admissionFeesPayment;
+use App\Http\Controllers\frontend\examControllers\OneController;
+use App\Http\Controllers\frontend\examControllers\TwoController;
+use App\Http\Controllers\frontend\examControllers\PlayController;
+use App\Http\Controllers\frontend\examControllers\HifjoController;
+use App\Http\Controllers\frontend\examControllers\ThreeController;
+use App\Http\Controllers\frontend\examControllers\NajeraController;
+use App\Http\Controllers\frontend\examControllers\ResultController;
+use App\Http\Controllers\frontend\examControllers\NarsaryController;
+use App\Http\Controllers\frontend\pay\StudentSalaryOfMonthController;
 
 Route::get('/',[homeController::class,'index']);
 
@@ -28,8 +36,6 @@ Route::middleware('auth')->group(function () {
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
-
-require __DIR__.'/auth.php';
 
 
 Route::get('/error',[error404Controller::class,'index']);
@@ -52,3 +58,15 @@ Route::post('/donation/store', [DonationController::class, 'store'])->name('dona
 Route::post('/exam/store', [ExamFeeController::class, 'store'])->name('exam_fee.store');
 Route::post('/salary/store', [StudentSalaryOfMonthController::class, 'store'])->name('salary.store');
 Route::post('/zakat/store',[ZakatController::class,'store'])->name('zakat.store');
+
+// All Class Examination Result Sit Route Is Here 
+Route::get('/result',[ResultController::class,'index']);
+Route::get('/play',[PlayController::class,'index'])->name('play.result');
+Route::get('/narsary',[NarsaryController::class,'index'])->name('narsary.result');
+Route::get('/one',[OneController::class,'index'])->name('one.result');
+Route::get('/two',[TwoController::class,'index'])->name('two.result');
+Route::get('/three',[ThreeController::class,'index'])->name('three.result');
+Route::get('/najera',[NajeraController::class,'index'])->name('najera.result');
+Route::get('/hifjo',[HifjoController::class,'index'])->name('hifjo.result');
+
+require __DIR__.'/auth.php';

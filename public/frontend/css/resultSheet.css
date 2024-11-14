@@ -1,0 +1,2 @@
+.resultYearsTextAnimation{-webkit-animation:resultYearsTextAnim 5s cubic-bezier(.55,.085,.68,.53) infinite both;animation:resultYearsTextAnim 5s cubic-bezier(.55,.085,.68,.53) infinite both}
+@-webkit-keyframes resultYearsTextAnim{0%{opacity:1;color: chartreuse;}50%{opacity:1;color: red;}100%{letter-spacing:-.5em;opacity:0}}@keyframes resultYearsTextAnim{0%{opacity:1;color: red;}50%{opacity:1;color: green;}100%{letter-spacing:-.5em;opacity:0}}
